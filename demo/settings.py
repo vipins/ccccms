@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_video',
     'cms.plugins.link',
     'plugins.bootstrap_button',
+
 	
 )
 
@@ -161,6 +162,8 @@ CMS_LANGUAGE_CONF = {
 CMS_TEMPLATES = (
     ('home.html', gettext("Homepage")),
     ('subpage.html', gettext("Secondary Page")),
+	('calendar.html', gettext("Calendar")),
+	('projects.html', gettext("Projects")),
 )
 
 CMS_PLACEHOLDER_CONF = {

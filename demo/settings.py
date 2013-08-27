@@ -117,6 +117,9 @@ INSTALLED_APPS = (
     'cmsplugin_filer_video',
     'cms.plugins.link',
     'plugins.bootstrap_button',
+	'cmsplugin_comments',
+	'django.contrib.comments',
+	'django.contrib.admin',
 
 	
 )
@@ -201,6 +204,7 @@ CMS_PERMISSION = True
 CMS_SHOW_START_DATE = True
 CMS_SHOW_END_DATE = True 
 CMS_SEO_FIELDS = True 
+
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',

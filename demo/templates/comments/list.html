@@ -1,0 +1,17 @@
+{% load comments %}
+<div id="substance">
+<div class="comments-list">
+{% for comment in comments %}
+    <div class="comment">
+        <div class="username">{{ comment.user_name}} ({{ comment.submit_date|date:"d M Y" }})</div>
+        <p>{{comment.comment}}</p>
+    </div>
+{% endfor %}
+</div>
+</div>
+<span id="form-ctl" onclick="$('#form').toggle();"> <b>Post Comment </b></span>
+
+<div id="form" style="display: none;">
+ {% csrf_token %}
+    {% render_comment_form for instance %}
+<div>
